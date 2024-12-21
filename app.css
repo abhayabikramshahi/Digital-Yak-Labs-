@@ -32,9 +32,9 @@ body {
     height: 54px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background: orangered;
+    background: cornflowerblue;
     color: whitesmoke;
-    /* font-size: 15px; */
+    font-size: 15px;
     text-transform: uppercase;
     cursor: pointer;
 }

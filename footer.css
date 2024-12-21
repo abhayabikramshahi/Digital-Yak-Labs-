@@ -9,6 +9,7 @@
 }
 .footer {
     padding: 91px 0;
+    width: 100%;
 }
 .rhs {
     line-height: 14px;
@@ -16,6 +17,10 @@
 @media screen and (max-width: 768px) {
     .footer{
         display: flex;
-        justify-content: column;
+        flex-direction: column;
+    }
+    .wrap-footer{
+        flex-direction: column;
+        gap: 12px;
     }
 }
