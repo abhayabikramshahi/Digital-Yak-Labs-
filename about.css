@@ -1,0 +1,29 @@
+.content {
+    padding: 40px 24px;
+}
+.title h2 {
+    font-size: 33px;
+}
+p {
+    padding: 14px 0;
+    font-size: 19px;
+    line-height: 34px;
+}
+.flex {
+    display: flex
+;
+    align-items: center;
+    padding: 12px 0;
+    font-size: 18px;
+    display: flex
+;
+}
+.choose {
+    padding: 46px 0;
+}
+.title-choose h2 {
+    font-size: 38px;
+}
+.content-choose {
+    padding: 20px 0;
+}

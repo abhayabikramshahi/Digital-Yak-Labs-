@@ -1,0 +1,21 @@
+.wrap-footer {
+    display: flex
+;
+    justify-content: space-between;
+    background: #2F4150;
+    color: whitesmoke;
+    padding: 30px 28px;
+
+}
+.footer {
+    padding: 91px 0;
+}
+.rhs {
+    line-height: 14px;
+}
+@media screen and (max-width: 768px) {
+    .footer{
+        display: flex;
+        justify-content: column;
+    }
+}

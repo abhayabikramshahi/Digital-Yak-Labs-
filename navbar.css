@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.logo h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 20px 0;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a73e8;
+    width: 100%;
+    padding: 10px 20px;
+    position: relative;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #ffcb05;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger div {
+    background: white;
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #1a73e8;
+        display: none;
+    }
+    .navbar ul.active {
+        display: flex
+;
+        width: 100%;
+        align-items: start;
+        padding: 17px 21px;
+        margin-top: -7px;
+        animation-name: navabr;
+    }
+    .hamburger {
+        display: flex;
+        width: 100%;
+    }
+}
+@keyframes navbar{
+    from{
+        opacity: 0;
+        top: 100%
+    }
+    to{
+        opacity: 100;
+        top: 0;
+    }
+}
