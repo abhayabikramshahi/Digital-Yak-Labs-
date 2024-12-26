@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /private/
-Disallow: /temp/
-Allow: /
-
-Sitemap: https://www.digitalyaklabs.netlify.app/sitemap.xml

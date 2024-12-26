@@ -1,8 +1,0 @@
-/* TEAM */
-Developer: Abhaya Bikram Shahi
-Contact: abhayabikramshahiofficial@gmail.com
-Location: Pokhari Chowr, Kalikot, Nepal
-Website: https://www.digitalyaklabs.netlify.app
-
-/* THANK YOU */
-Powered by Digital Yaks Lab
