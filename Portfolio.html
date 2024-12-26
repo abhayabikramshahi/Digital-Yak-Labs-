@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+       <!-- Navbar -->
+       <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
+        <div class="text-xl font-bold">Digital Yak Labs</div>
+
+        <!-- Hamburger Icon -->
+        <button id="hamburger" class="text-2xl md:hidden focus:outline-none">
+            &#9776;
+        </button>
+
+        <!-- Navigation Links -->
+        <nav id="navMenu" class="hidden md:flex space-x-6">
+            <a href="index.html" class="hover:text-yellow-400">Home</a>
+            <a href="AboutUs.html" class="hover:text-yellow-400">About Us</a>
+            <a href="Services.html" class="hover:text-yellow-400">Services</a>
+            <a href="Portfolio.html" class="hover:text-yellow-400">Portfolio</a>
+            <a href="Contact.html" class="hover:text-yellow-400">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Dropdown Menu for Mobile -->
+    <nav id="mobileMenu" class="hidden bg-gray-800 text-white space-y-4 p-4 md:hidden">
+        <a href="index.html" class="block hover:text-yellow-400">Home</a>
+        <a href="AboutUs.html" class="block hover:text-yellow-400">About Us</a>
+        <a href="Services.html" class="block hover:text-yellow-400">Services</a>
+        <a href="Portfolio.html" class="block hover:text-yellow-400">Portfolio</a>
+        <a href="Contact.html" class="block hover:text-yellow-400">Contact</a>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="bg-blue-600 text-white py-16">
+        <div class="max-w-screen-xl mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to <span class="text-yellow-300">Digital Yak Labs</span></h1>
+            <p class="text-lg mb-6">
+                Empowering businesses with innovative digital solutions and creative designs.
+            </p>
+            <a href="#contact" class="bg-yellow-300 text-blue-600 py-3 px-8 rounded-lg font-medium shadow-lg hover:bg-yellow-400 transition duration-300">
+                Get in Touch
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-screen-xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">About <span class="text-blue-600">Digital Yak Labs</span></h2>
+            <p class="text-gray-700 text-lg mb-4">
+                At Digital Yak Labs, we specialize in crafting digital solutions that inspire growth and innovation. 
+                From web development to cutting-edge design, we help businesses stand out in the digital era.
+            </p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-16">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our <span class="text-blue-600">Work</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 text-center p-6">
+                    <i class="fa-solid fa-school text-blue-600 text-6xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">School digital Version</h3>
+                    <p class="text-gray-600">
+                        "An innovative and scalable platform to enhance learning experiences and streamline educational processes for schools."
+                    </p>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-screen-xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Our <span class="text-blue-600">Expertise</span></h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                <div class="text-center">
+                    <i class="fab fa-html5 text-orange-500 text-6xl mb-4"></i>
+                    <h3 class="text-lg font-medium">HTML</h3>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-css3-alt text-blue-500 text-6xl mb-4"></i>
+                    <h3 class="text-lg font-medium">CSS</h3>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-js-square text-yellow-500 text-6xl mb-4"></i>
+                    <h3 class="text-lg font-medium">JavaScript</h3>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-react text-blue-400 text-6xl mb-4"></i>
+                    <h3 class="text-lg font-medium">React</h3>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-node-js text-green-500 text-6xl mb-4"></i>
+                    <h3 class="text-lg font-medium">Node.js</h3>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-python text-blue-700 text-6xl mb-4"></i>
+                    <h3 class="text-lg font-medium">Python</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer class="py-16 bg-blue-600 text-white">
+        <div class="max-w-screen-xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Let's <span class="text-yellow-300">Collaborate</span></h2>
+            <p class="mb-8">
+                Interested in working with us? Drop us a message, and let's create something extraordinary together!
+            </p>
+            <a href="#contact" class="bg-yellow-300 text-blue-600 py-3 px-8 rounded-lg font-medium shadow-lg hover:bg-yellow-400 transition duration-300">
+                Contact Us
+            </a>
+        </div>
+    </footer>
+</style>
+<!-- JavaScript for Navbar Toggle -->
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+</body>
+</html>

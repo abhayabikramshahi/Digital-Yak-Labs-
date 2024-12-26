@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+        <!-- Navbar -->
+        <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
+            <div class="text-xl font-bold">Digital Yak Labs</div>
+    
+            <!-- Hamburger Icon -->
+            <button id="hamburger" class="text-2xl md:hidden focus:outline-none">
+                &#9776;
+            </button>
+    
+            <!-- Navigation Links -->
+            <nav id="navMenu" class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-yellow-400">Home</a>
+                <a href="AboutUs.html" class="hover:text-yellow-400">About Us</a>
+                <a href="Services.html" class="hover:text-yellow-400">Services</a>
+                <a href="Portfolio.html" class="hover:text-yellow-400">Portfolio</a>
+                <a href="Contact.html" class="hover:text-yellow-400">Contact</a>
+            </nav>
+        </header>
+    
+        <!-- Dropdown Menu for Mobile -->
+        <nav id="mobileMenu" class="hidden bg-gray-800 text-white space-y-4 p-4 md:hidden">
+            <a href="index.html" class="block hover:text-yellow-400">Home</a>
+            <a href="AboutUs.html" class="block hover:text-yellow-400">About Us</a>
+            <a href="Services.html" class="block hover:text-yellow-400">Services</a>
+            <a href="Portfolio.html" class="block hover:text-yellow-400">Portfolio</a>
+            <a href="Contact.html" class="block hover:text-yellow-400">Contact</a>
+        </nav>
+    
+
+         <!-- About Us Section -->
+    <section id="about-us" class="py-16 bg-white">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">About <span class="text-blue-600">SoftNEP</span></h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        SoftNEP is a leading software solutions provider based in Kathmandu, Nepal. With over 20 years of experience, we specialize in delivering innovative and customized software, web development, and digital marketing solutions that help businesses thrive in the competitive digital landscape.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Our team of passionate experts works diligently to understand your business needs and deliver results-driven solutions. Whether you're looking to develop cutting-edge websites, boost your online presence, or create user-focused digital products, SoftNEP has you covered.
+                    </p>
+                    <a href="#contact" class="bg-blue-600 text-white py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 text-lg font-medium">Get in Touch</a>
+                </div>
+
+                <!-- Image Section -->
+                <div class="relative">
+                    <img src="https://via.placeholder.com/600x400" alt="About SoftNEP - Software Solutions Provider in Nepal" class="rounded-lg shadow-lg">
+                    <div class="absolute top-0 left-0 bg-blue-600 text-white px-4 py-2 rounded-tr-lg">Since 2004</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Testimonials Section -->
+      <section class="py-16 bg-gray-100">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-gray-800 mb-12 text-center">What Our Clients Say</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic">"SoftNEP delivered exactly what we needed. Their expertise and professionalism are unmatched."</p>
+                    <h4 class="text-blue-600 font-semibold mt-4">- John Doe, CEO of XYZ</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic">"We’ve seen incredible growth in our online presence thanks to their digital marketing solutions."</p>
+                    <h4 class="text-blue-600 font-semibold mt-4">- Jane Smith, Marketing Head</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic">"A fantastic team that goes above and beyond to ensure success. Highly recommended!"</p>
+                    <h4 class="text-blue-600 font-semibold mt-4">- Alex Brown, Product Manager</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-blue-600 text-white text-center">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-6">Let’s Build Something Amazing Together</h3>
+            <a href="#contact" class="bg-white text-blue-600 py-3 px-8 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300 text-lg font-medium">Contact Us</a>
+        </div>
+    </section>
+
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+    
+            hamburger.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+</body>
+</html>

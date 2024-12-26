@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+      <!-- Navbar -->
+      <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
+        <div class="text-xl font-bold">Digital Yak Labs</div>
+
+        <!-- Hamburger Icon -->
+        <button id="hamburger" class="text-2xl md:hidden focus:outline-none">
+            &#9776;
+        </button>
+
+        <!-- Navigation Links -->
+        <nav id="navMenu" class="hidden md:flex space-x-6">
+            <a href="index.html" class="hover:text-yellow-400">Home</a>
+            <a href="AboutUs.html" class="hover:text-yellow-400">About Us</a>
+            <a href="Services.html" class="hover:text-yellow-400">Services</a>
+            <a href="Portfolio.html" class="hover:text-yellow-400">Portfolio</a>
+            <a href="Contact.html" class="hover:text-yellow-400">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Dropdown Menu for Mobile -->
+    <nav id="mobileMenu" class="hidden bg-gray-800 text-white space-y-4 p-4 md:hidden">
+        <a href="index.html" class="block hover:text-yellow-400">Home</a>
+        <a href="AboutUs.html" class="block hover:text-yellow-400">About Us</a>
+        <a href="Services.html" class="block hover:text-yellow-400">Services</a>
+        <a href="Portfolio.html" class="block hover:text-yellow-400">Portfolio</a>
+        <a href="Contact.html" class="block hover:text-yellow-400">Contact</a>
+    </nav>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-screen-xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Our <span class="text-blue-600">Services</span></h2>
+            <p class="text-gray-600 text-lg mb-12">
+                We provide a wide range of innovative and results-driven services tailored to meet your business needs.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16v-4m4 0v4m4-4v4m1 4H7a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v13a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Web Development</h3>
+                    <p class="text-gray-600">
+                        Create high-performing websites with a focus on speed, user experience, and SEO.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Digital Marketing</h3>
+                    <p class="text-gray-600">
+                        Boost your online presence with customized digital marketing strategies.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21V3m7 18l4-4-4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">UI/UX Design</h3>
+                    <p class="text-gray-600">
+                        Design user-friendly and visually appealing interfaces to enhance user experience.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Mobile App Development</h3>
+                    <p class="text-gray-600">
+                        Build seamless, cross-platform mobile applications tailored to your needs.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6M9 16h6m-6 4h6M5 8l7-7 7 7M5 21h14" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Cloud Solutions</h3>
+                    <p class="text-gray-600">
+                        Leverage the power of cloud computing for scalability and efficiency.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4m9 8l-4-4m0 0l4-4m-4 4h14" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">E-Commerce Solutions</h3>
+                    <p class="text-gray-600">
+                        Develop secure and scalable e-commerce platforms to grow your business.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-blue-600 text-white text-center">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-6">Ready to Elevate Your Business?</h3>
+            <a href="#contact" class="bg-white text-blue-600 py-3 px-8 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300 text-lg font-medium">Get in Touch</a>
+        </div>
+    </section>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

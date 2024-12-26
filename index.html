@@ -3,38 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburger Navbar</title>
+    <!-- SEO Meta Tags -->
+    <title>Digital Yak Labs - Innovative Digital Solutions</title>
+    <meta name="description" content="Digital Yak Labs offers cutting-edge digital solutions including web development, UI/UX design, and software engineering to transform businesses.">
+    <meta name="keywords" content="Digital Yak Labs, Web Development, UI/UX Design, Software Development, Digital Solutions, Innovative Technology">
+    <meta name="author" content="Digital Yak Labs">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags (For Social Sharing) -->
+    <meta property="og:title" content="Digital Yak Labs - Innovative Digital Solutions">
+    <meta property="og:description" content="Transform your business with Digital Yak Labs. We provide expert services in web development, UI/UX design, and software engineering.">
+    <meta property="og:image" content="https://digitalyaklabs.netlify.app/og-image.jpg">
+    <meta property="og:url" content="https://digitalyaklabs.netlify.app">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Digital Yak Labs - Innovative Digital Solutions">
+    <meta name="twitter:description" content="Digital Yak Labs specializes in web development, UI/UX design, and software engineering to help businesses thrive in the digital age.">
+    <meta name="twitter:image" content="https://yourwebsite.com/twitter-image.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://digitalyaklabs.netlify.app/sitemap.xml">
 </head>
 <body class="bg-gray-100">
 
-    <!-- Navbar -->
-    <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
-        <div class="text-xl font-bold">Digital Yak Labs</div>
-
-        <!-- Hamburger Icon -->
-        <button id="hamburger" class="text-2xl md:hidden focus:outline-none">
-            &#9776;
-        </button>
-
-        <!-- Navigation Links -->
-        <nav id="navMenu" class="hidden md:flex space-x-6">
-            <a href="#home" class="hover:text-yellow-400">Home</a>
-            <a href="#about" class="hover:text-yellow-400">About Us</a>
-            <a href="#services" class="hover:text-yellow-400">Services</a>
-            <a href="#portfolio" class="hover:text-yellow-400">Portfolio</a>
-            <a href="#contact" class="hover:text-yellow-400">Contact</a>
+        <!-- Navbar -->
+        <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
+            <div class="text-xl font-bold">Digital Yak Labs</div>
+    
+            <!-- Hamburger Icon -->
+            <button id="hamburger" class="text-2xl md:hidden focus:outline-none">
+                &#9776;
+            </button>
+    
+            <!-- Navigation Links -->
+            <nav id="navMenu" class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-yellow-400">Home</a>
+                <a href="AboutUs.html" class="hover:text-yellow-400">About Us</a>
+                <a href="Services.html" class="hover:text-yellow-400">Services</a>
+                <a href="Portfolio.html" class="hover:text-yellow-400">Portfolio</a>
+                <a href="Contact.html" class="hover:text-yellow-400">Contact</a>
+            </nav>
+        </header>
+    
+        <!-- Dropdown Menu for Mobile -->
+        <nav id="mobileMenu" class="hidden bg-gray-800 text-white space-y-4 p-4 md:hidden">
+            <a href="index.html" class="block hover:text-yellow-400">Home</a>
+            <a href="AboutUs.html" class="block hover:text-yellow-400">About Us</a>
+            <a href="Services.html" class="block hover:text-yellow-400">Services</a>
+            <a href="Portfolio.html" class="block hover:text-yellow-400">Portfolio</a>
+            <a href="Contact.html" class="block hover:text-yellow-400">Contact</a>
         </nav>
-    </header>
-
-    <!-- Dropdown Menu for Mobile -->
-    <nav id="mobileMenu" class="hidden bg-gray-800 text-white space-y-4 p-4 md:hidden">
-        <a href="#home" class="block hover:text-yellow-400">Home</a>
-        <a href="#about" class="block hover:text-yellow-400">About Us</a>
-        <a href="#services" class="block hover:text-yellow-400">Services</a>
-        <a href="#portfolio" class="block hover:text-yellow-400">Portfolio</a>
-        <a href="#contact" class="block hover:text-yellow-400">Contact</a>
-    </nav>
+    
 
 
       <!-- Hero Section -->
@@ -44,7 +65,7 @@
             <p class="text-lg md:text-xl mb-6 animate-slide-in">
                 Empowering businesses with innovative web development, UI/UX design, and video editing solutions.
             </p>
-            <a href="#services" class="bg-yellow-400 text-gray-900 py-3 px-6 rounded-full font-semibold hover:bg-yellow-300 transition animate-fade-in">
+            <a href="mailto:abhayabikramshahiofficial@gmail.com" class="bg-yellow-400 text-gray-900 py-3 px-6 rounded-full font-semibold hover:bg-yellow-300 transition animate-fade-in">
                 Get Started
             </a>
         </div>
@@ -53,34 +74,216 @@
         <div class="absolute bottom-16 right-20 w-24 h-24 bg-yellow-300 rounded-full blur-xl opacity-40 animate-pulse"></div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8 animate-fade-in">Our Services</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-white shadow-lg p-6 rounded-lg hover:scale-105 transform transition duration-300">
-                    <h3 class="text-xl font-semibold mb-4">Web Development</h3>
-                    <p class="text-gray-600">Custom-built websites optimized for performance and user experience.</p>
+ <!-- Header -->
+ <section class="py-12 text-center">
+    <h1 class="text-4xl font-bold text-gray-800">Our Services</h1>
+    <p class="text-lg text-gray-600 mt-4">We offer a range of services to help your business grow and thrive.</p>
+</section>
+
+<!-- Services Grid -->
+<section class="py-16">
+    <div class="max-w-screen-xl mx-auto px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Box 1 -->
+            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 text-center">
+                <div class="mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M12 21h.01"></path>
+                    </svg>
                 </div>
-                <!-- Service 2 -->
-                <div class="bg-white shadow-lg p-6 rounded-lg hover:scale-105 transform transition duration-300">
-                    <h3 class="text-xl font-semibold mb-4">UI/UX Design</h3>
-                    <p class="text-gray-600">Engaging and intuitive designs that captivate your audience.</p>
+                <h3 class="text-xl font-semibold text-gray-800">Web Development</h3>
+                <p class="text-gray-600 mt-4">Build your online presence with modern, scalable, and fast websites that engage your customers.</p>
+            </div>
+
+            <!-- Service Box 2 -->
+            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 text-center">
+                <div class="mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M12 21h.01"></path>
+                    </svg>
                 </div>
-                <!-- Service 3 -->
-                <div class="bg-white shadow-lg p-6 rounded-lg hover:scale-105 transform transition duration-300">
-                    <h3 class="text-xl font-semibold mb-4">Video Editing</h3>
-                    <p class="text-gray-600">Professional video editing to tell your story creatively.</p>
+                <h3 class="text-xl font-semibold text-gray-800">UI/UX Design</h3>
+                <p class="text-gray-600 mt-4">Create seamless and user-friendly designs that provide exceptional user experiences on any device.</p>
+            </div>
+
+            <!-- Service Box 3 -->
+            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 text-center">
+                <div class="mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-red-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M12 21h.01"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">Video Editing</h3>
+                <p class="text-gray-600 mt-4">Enhance your content with professional video editing that tells your brand story effectively.</p>
+            </div>
+
+            <!-- Add more services as needed -->
+        </div>
+    </div>
+</section>
+
+
+    
+    
+    
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 animate-fade-in">Our Achievements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Statistic 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md group transition-transform duration-500 hover:scale-105">
+                    <div class="text-gray-500 mb-4">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-12 w-12 mx-auto group-hover:text-green-500 transition-colors duration-300"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 8v4l3 3m9-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="text-4xl font-bold text-green-800 group-hover:text-green-600 transition-colors duration-300 counter" data-target="19">
+                        0
+                    </h3>
+                    <p class="text-gray-600 mt-2">Years of online creativity</p>
+                </div>
+                <!-- Statistic 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md group transition-transform duration-500 hover:scale-105">
+                    <div class="text-gray-500 mb-4">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-12 w-12 mx-auto group-hover:text-green-500 transition-colors duration-300"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 12h6m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v13a2 2 0 01-2 2z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="text-4xl font-bold text-green-800 group-hover:text-green-600 transition-colors duration-300 counter" data-target="500">
+                        0
+                    </h3>
+                    <p class="text-gray-600 mt-2">Happy clients</p>
+                </div>
+                <!-- Statistic 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md group transition-transform duration-500 hover:scale-105">
+                    <div class="text-gray-500 mb-4">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-12 w-12 mx-auto group-hover:text-green-500 transition-colors duration-300"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 10h11M9 21V3m0 18h8m2 0a2 2 0 002-2V5a2 2 0 00-2-2h-8"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="text-4xl font-bold text-green-800 group-hover:text-green-600 transition-colors duration-300 counter" data-target="1000">
+                        0
+                    </h3>
+                    <p class="text-gray-600 mt-2">Projects delivered</p>
+                </div>
+                <!-- Statistic 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md group transition-transform duration-500 hover:scale-105">
+                    <div class="text-gray-500 mb-4">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-12 w-12 mx-auto group-hover:text-green-500 transition-colors duration-300"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M7 20l4-16m5 14l4-16"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="text-4xl font-bold text-green-800 group-hover:text-green-600 transition-colors duration-300 counter" data-target="100">
+                        0
+                    </h3>
+                    <p class="text-gray-600 mt-2">Professionals engaged</p>
                 </div>
             </div>
         </div>
     </section>
+    
+     <!-- Interested in starting a project Section -->
+     <section class="py-16 bg-blue-100">
+        <div class="max-w-screen-xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Interested in starting a project with us?</h2>
+            <p class="text-lg text-gray-600 mb-6">We’d love to help you bring your ideas to life. Let’s get in touch and discuss how we can collaborate!</p>
+            
+            <a href="mailto:abhayabikramshahiofficial@gmail.com" class="inline-block bg-blue-600 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+                Start Your Project
+            </a>
+        </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-4 text-center">
-        <p class="animate-fade-in">&copy; 2024 Digital Yak Labs. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <ul>
+                        <li><strong>General Inquiry:</strong> <a href="mailto:info@softnep.com" class="text-blue-400 hover:underline">info@softnep.com</a></li>
+                        <li><strong>Marketing:</strong> <a href="mailto:mkt@softnep.com" class="text-blue-400 hover:underline">mkt@softnep.com</a></li>
+                        <li><strong>Call Us:</strong> <span class="block">+977 14115934</span> <span class="block">+977 14115601</span> <span class="block">+977 98188 61321</span></li>
+                    </ul>
+                </div>
+
+                <!-- Visit Us -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Visit Us</h3>
+                    <p>SoftNEP Private Limited</p>
+                    <p>Bhimsen Gola Marg, Min Bhawan</p>
+                    <p>Kathmandu, Nepal</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" class="text-blue-400 hover:underline">Home</a></li>
+                        <li><a href="#about" class="text-blue-400 hover:underline">About</a></li>
+                        <li><a href="#services" class="text-blue-400 hover:underline">Services</a></li>
+                        <li><a href="#works" class="text-blue-400 hover:underline">Works</a></li>
+                        <li><a href="#team" class="text-blue-400 hover:underline">Team</a></li>
+                        <li><a href="#career" class="text-blue-400 hover:underline">Career</a></li>
+                        <li><a href="#blog" class="text-blue-400 hover:underline">Blog</a></li>
+                        <li><a href="#goodies" class="text-blue-400 hover:underline">Goodies</a></li>
+                        <li><a href="#privacy-policy" class="text-blue-400 hover:underline">Privacy Policy</a></li>
+                        <li><a href="#contact" class="text-blue-400 hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Copyright Section -->
+                <div class="col-span-full text-center mt-12 sm:mt-0">
+                    <p class="text-sm">&copy; 2004 - 2024 SoftNEP. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
 
     <!-- Tailwind Animations -->
     <style>
@@ -132,5 +335,7 @@
             mobileMenu.classList.toggle('hidden');
         });
     </script>
+
+    <script src="app.js"></script>
 </body>
 </html>
