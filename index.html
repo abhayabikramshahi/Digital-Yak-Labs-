@@ -28,313 +28,128 @@
 </head>
 <body class="bg-gray-100">
 
-        <!-- Navbar -->
-        <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
-            <div class="text-xl font-bold">Digital Yak Labs</div>
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6 lg:px-16">
+          <!-- Logo -->
+          <a href="#" class="text-2xl font-bold text-gray-800">Digital Yak Labs</a>
     
-            <!-- Hamburger Icon -->
-            <button id="hamburger" class="text-2xl md:hidden focus:outline-none">
-                &#9776;
-            </button>
+          <!-- Navigation Links -->
+          <ul class="hidden lg:flex space-x-8 text-lg font-medium text-gray-600">
+            <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+            <li><a href="AboutUs.html" class="hover:text-blue-500">About</a></li>
+            <li><a href="Services.html" class="hover:text-blue-500">Services</a></li>
+            <li><a href="Portfolio.html" class="hover:text-blue-500">Portfolio</a></li>
+            <li><a href="Contact.html" class="hover:text-blue-500">Contact</a></li>
+          </ul>
     
-            <!-- Navigation Links -->
-            <nav id="navMenu" class="hidden md:flex space-x-6">
-                <a href="index.html" class="hover:text-yellow-400">Home</a>
-                <a href="AboutUs.html" class="hover:text-yellow-400">About Us</a>
-                <a href="Services.html" class="hover:text-yellow-400">Services</a>
-                <a href="Portfolio.html" class="hover:text-yellow-400">Portfolio</a>
-                <a href="Contact.html" class="hover:text-yellow-400">Contact</a>
-            </nav>
-        </header>
-    
-        <!-- Dropdown Menu for Mobile -->
-        <nav id="mobileMenu" class="hidden bg-gray-800 text-white space-y-4 p-4 md:hidden">
-            <a href="index.html" class="block hover:text-yellow-400">Home</a>
-            <a href="AboutUs.html" class="block hover:text-yellow-400">About Us</a>
-            <a href="Services.html" class="block hover:text-yellow-400">Services</a>
-            <a href="Portfolio.html" class="block hover:text-yellow-400">Portfolio</a>
-            <a href="Contact.html" class="block hover:text-yellow-400">Contact</a>
-        </nav>
-    
-
-
-      <!-- Hero Section -->
-    <section class="relative bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white h-screen flex items-center justify-center">
-        <div class="text-center animate-fade-in">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-bounce">Welcome to Digital Yak Labs</h1>
-            <p class="text-lg md:text-xl mb-6 animate-slide-in">
-                Empowering businesses with innovative web development, UI/UX design, and video editing solutions.
-            </p>
-            <a href="mailto:abhayabikramshahiofficial@gmail.com" class="bg-yellow-400 text-gray-900 py-3 px-6 rounded-full font-semibold hover:bg-yellow-300 transition animate-fade-in">
-                Get Started
-            </a>
+          <!-- Mobile Menu Button -->
+          <button id="menu-btn" class="lg:hidden focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
         </div>
-        <!-- Decorative Shapes -->
-        <div class="absolute top-16 left-10 w-20 h-20 bg-yellow-400 rounded-full blur-xl opacity-40 animate-pulse"></div>
-        <div class="absolute bottom-16 right-20 w-24 h-24 bg-yellow-300 rounded-full blur-xl opacity-40 animate-pulse"></div>
-    </section>
-
- <!-- Header -->
- <section class="py-12 text-center">
-    <h1 class="text-4xl font-bold text-gray-800">Our Services</h1>
-    <p class="text-lg text-gray-600 mt-4">We offer a range of services to help your business grow and thrive.</p>
-</section>
-
-<!-- Services Grid -->
-<section class="py-16">
-    <div class="max-w-screen-xl mx-auto px-6">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Service Box 1 -->
-            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 text-center">
-                <div class="mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M12 21h.01"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800">Web Development</h3>
-                <p class="text-gray-600 mt-4">Build your online presence with modern, scalable, and fast websites that engage your customers.</p>
-            </div>
-
-            <!-- Service Box 2 -->
-            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 text-center">
-                <div class="mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M12 21h.01"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800">UI/UX Design</h3>
-                <p class="text-gray-600 mt-4">Create seamless and user-friendly designs that provide exceptional user experiences on any device.</p>
-            </div>
-
-            <!-- Service Box 3 -->
-            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 text-center">
-                <div class="mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-red-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M12 21h.01"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800">Video Editing</h3>
-                <p class="text-gray-600 mt-4">Enhance your content with professional video editing that tells your brand story effectively.</p>
-            </div>
-
-            <!-- Add more services as needed -->
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white">
+          <ul class="flex flex-col items-center space-y-4 py-4 text-lg font-medium text-gray-600">
+            <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+            <li><a href="AboutUs.html" class="hover:text-blue-500">About</a></li>
+            <li><a href="Services.html" class="hover:text-blue-500">Services</a></li>
+            <li><a href="Portfolio.html" class="hover:text-blue-500">Portfolio</a></li>
+            <li><a href="Contact.html" class="hover:text-blue-500">Contact</a></li>
+          </ul>
         </div>
+      </nav>
+    
+
+
+  <!-- Hero Section -->
+  <section class="relative bg-gray-50">
+    <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between py-20 px-6 lg:px-16">
+      
+      <!-- Text Content -->
+      <div class="lg:w-1/2 text-center lg:text-left">
+        <h1 class="text-4xl lg:text-6xl font-extrabold text-gray-800 animate-slide-up">
+          Empower Your Ideas <br>
+          <span class="text-blue-500">With Innovation</span>
+        </h1>
+        <p class="mt-6 text-lg text-gray-600 animate-slide-up" style="animation-delay: 0.5s;">
+          Building cutting-edge solutions for businesses worldwide. Let's shape the future together with smart, scalable software.
+        </p>
+        <div class="mt-8 animate-slide-up" style="animation-delay: 1s;">
+          <a href="Services.html" class="px-6 py-3 bg-blue-500 text-white rounded-md shadow-lg hover:bg-blue-400 transition">Explore Services</a>
+        </div>
+      </div>
+
+      <!-- Animated Illustration -->
+      <div class="lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0">
+        <div class="w-4/5 lg:w-full ">
+          <img src="uploads/hero.jpg" alt="Hero Image" class=" ">
+        </div>
+      </div>
     </div>
-</section>
+  </section>
+
+  
 
 
+
     
     
     
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-gray-800 mb-8 animate-fade-in">Our Achievements</h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <!-- Statistic 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md group transition-transform duration-500 hover:scale-105">
-                    <div class="text-gray-500 mb-4">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-12 w-12 mx-auto group-hover:text-green-500 transition-colors duration-300"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M12 8v4l3 3m9-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                        </svg>
-                    </div>
-                    <h3 class="text-4xl font-bold text-green-800 group-hover:text-green-600 transition-colors duration-300 counter" data-target="2">
-                        0
-                    </h3>
-                    <p class="text-gray-600 mt-2">Years of online creativity</p>
-                </div>
-                <!-- Statistic 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md group transition-transform duration-500 hover:scale-105">
-                    <div class="text-gray-500 mb-4">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-12 w-12 mx-auto group-hover:text-green-500 transition-colors duration-300"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M9 12h6m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v13a2 2 0 01-2 2z"
-                            />
-                        </svg>
-                    </div>
-                    <h3 class="text-4xl font-bold text-green-800 group-hover:text-green-600 transition-colors duration-300 counter" data-target="5">
-                        0
-                    </h3>
-                    <p class="text-gray-600 mt-2">Happy clients</p>
-                </div>
-                <!-- Statistic 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-md group transition-transform duration-500 hover:scale-105">
-                    <div class="text-gray-500 mb-4">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-12 w-12 mx-auto group-hover:text-green-500 transition-colors duration-300"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M3 10h11M9 21V3m0 18h8m2 0a2 2 0 002-2V5a2 2 0 00-2-2h-8"
-                            />
-                        </svg>
-                    </div>
-                    <h3 class="text-4xl font-bold text-green-800 group-hover:text-green-600 transition-colors duration-300 counter" data-target="2">
-                        0
-                    </h3>
-                    <p class="text-gray-600 mt-2">Projects delivered</p>
-                </div>
-                <!-- Statistic 4 -->
-                <div class="bg-white p-6 rounded-lg shadow-md group transition-transform duration-500 hover:scale-105">
-                    <div class="text-gray-500 mb-4">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-12 w-12 mx-auto group-hover:text-green-500 transition-colors duration-300"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M7 20l4-16m5 14l4-16"
-                            />
-                        </svg>
-                    </div>
-                    <h3 class="text-4xl font-bold text-green-800 group-hover:text-green-600 transition-colors duration-300 counter" data-target="1">
-                        0
-                    </h3>
-                    <p class="text-gray-600 mt-2">Professionals engaged</p>
-                </div>
-            </div>
+  
+
+    <footer class="bg-gray-800 text-white py-6">
+        <!-- Footer Container -->
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0">
+          <!-- Logo & About -->
+          <div class="w-full md:w-1/3">
+            <h1 class="text-2xl font-bold">Digital Yak Labs</h1>
+            <p class="text-sm mt-2">
+              Your partner for innovative design, branding, and digital marketing solutions tailored for success.
+            </p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div class="w-full md:w-1/3">
+            <h2 class="text-lg font-semibold mb-2">Quick Links</h2>
+            <ul class="text-sm space-y-2">
+              <li><a href="AboutUs.html" class="hover:underline">About Us</a></li>
+              <li><a href="Services.html" class="hover:underline">Services</a></li>
+              <li><a href="Portfolio.html" class="hover:underline">Portfolio</a></li>
+              <li><a href="Contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Info -->
+          <div class="w-full md:w-1/3">
+            <h2 class="text-lg font-semibold mb-2">Contact</h2>
+            <ul class="text-sm space-y-2">
+              <li>Email: <a href="mailto:abhayabikramshahiofficial@gmail.com" class="hover:underline">abhayabikramshahiofficial@gmail.com</a></li>
+              <li>Phone: <a href="tel:+977 9808370638" class="hover:underline">+977 9808370638</a></li>
+              <li>Locations: Digital Yak Labs, Pokhari Chowr, kalikot, Nepal</li>
+            </ul>
+          </div>
         </div>
-    </section>
-    
-     <!-- Interested in starting a project Section -->
-     <section class="py-16 bg-blue-100">
-        <div class="max-w-screen-xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Interested in starting a project with us?</h2>
-            <p class="text-lg text-gray-600 mb-6">We’d love to help you bring your ideas to life. Let’s get in touch and discuss how we can collaborate!</p>
-            
-            <a href="mailto:abhayabikramshahiofficial@gmail.com" class="inline-block bg-blue-600 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
-                Start Your Project
-            </a>
+      
+        <!-- Bottom Bar -->
+        <div class="mt-6 border-t border-gray-700 pt-4 text-center text-sm">
+          <p>&copy; 2024 Digital Yak Labs. All rights reserved.</p>
         </div>
-    </section>
-
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="max-w-screen-xl mx-auto px-6">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-                <!-- Contact Info -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
-                    <ul>
-                        <li><strong>General Inquiry:</strong> <a href="mailto:abhayabikramshahiofficial@gmail.com" class="text-blue-400 hover:underline">abhayabikramshahiofficial@gmail.com</a></li>
-                        <li><strong>Marketing:</strong> <a href="mailto:abhayabikramshahiofficial@gmail.com" class="text-blue-400 hover:underline">abhayabikramshahiofficial@gmail.com</a></li>
-                        <li><strong>Call Us:</strong> <span class="block">+977 9808370638</span> <span class="block">+977 +977 9845589729</span> </li>
-                    </ul>
-                </div>
-
-                <!-- Visit Us -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Visit Us</h3>
-                    <p>Digital Yak Labs,</p>
-                    <p>Pokhari Chowr</p>
-                    <p>kalikot, Nepal</p>
-                </div>
-
-                <!-- Quick Links -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html" class="text-blue-400 hover:underline">Home</a></li>
-                        <li><a href="AboutUs.html" class="text-blue-400 hover:underline">About</a></li>
-                        <li><a href="Services.html" class="text-blue-400 hover:underline">Services</a></li>
-                        <li><a href="#works" class="text-blue-400 hover:underline">Works</a></li>
-                        <li><a href="#team" class="text-blue-400 hover:underline">Team</a></li>
-                        <li><a href="#career" class="text-blue-400 hover:underline">Career</a></li>
-                        <li><a href="#blog" class="text-blue-400 hover:underline">Blog</a></li>
-                        <li><a href="#goodies" class="text-blue-400 hover:underline">Goodies</a></li>
-                        <li><a href="#privacy-policy" class="text-blue-400 hover:underline">Privacy Policy</a></li>
-                        <li><a href="Contact.html" class="text-blue-400 hover:underline">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Copyright Section -->
-                <div class="col-span-full text-center mt-12 sm:mt-0">
-                    <p class="text-sm">&copy; 2004 - 2024 Digital Yak Labs. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+      </footer>
+      
 
 
-    <!-- Tailwind Animations -->
-    <style>
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        @keyframes slideIn {
-            from {
-                transform: translateY(20px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .animate-fade-in {
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        .animate-slide-in {
-            animation: slideIn 1s ease-out;
-        }
-
-        .animate-bounce {
-            animation: bounce 2s infinite;
-        }
-    </style>
     <!-- JavaScript for Navbar Toggle -->
     <script>
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobileMenu');
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-        hamburger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 
     <script src="app.js"></script>
 </body>

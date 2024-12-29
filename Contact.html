@@ -7,34 +7,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
-
-         <!-- Navbar -->
-         <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
-            <div class="text-xl font-bold">Digital Yak Labs</div>
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6 lg:px-16">
+          <!-- Logo -->
+          <a href="#" class="text-2xl font-bold text-gray-800">Digital Yak Labs</a>
     
-            <!-- Hamburger Icon -->
-            <button id="hamburger" class="text-2xl md:hidden focus:outline-none">
-                &#9776;
-            </button>
+          <!-- Navigation Links -->
+          <ul class="hidden lg:flex space-x-8 text-lg font-medium text-gray-600">
+            <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+            <li><a href="AboutUs.html" class="hover:text-blue-500">About</a></li>
+            <li><a href="Services.html" class="hover:text-blue-500">Services</a></li>
+            <li><a href="Portfolio.html" class="hover:text-blue-500">Portfolio</a></li>
+            <li><a href="Contact.html" class="hover:text-blue-500">Contact</a></li>
+          </ul>
     
-            <!-- Navigation Links -->
-            <nav id="navMenu" class="hidden md:flex space-x-6">
-                <a href="index.html" class="hover:text-yellow-400">Home</a>
-                <a href="AboutUs.html" class="hover:text-yellow-400">About Us</a>
-                <a href="Services.html" class="hover:text-yellow-400">Services</a>
-                <a href="Portfolio.html" class="hover:text-yellow-400">Portfolio</a>
-                <a href="Contact.html" class="hover:text-yellow-400">Contact</a>
-            </nav>
-        </header>
+          <!-- Mobile Menu Button -->
+          <button id="menu-btn" class="lg:hidden focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
     
-        <!-- Dropdown Menu for Mobile -->
-        <nav id="mobileMenu" class="hidden bg-gray-800 text-white space-y-4 p-4 md:hidden">
-            <a href="index.html" class="block hover:text-yellow-400">Home</a>
-            <a href="AboutUs.html" class="block hover:text-yellow-400">About Us</a>
-            <a href="Services.html" class="block hover:text-yellow-400">Services</a>
-            <a href="Portfolio.html" class="block hover:text-yellow-400">Portfolio</a>
-            <a href="Contact.html" class="block hover:text-yellow-400">Contact</a>
-        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white">
+          <ul class="flex flex-col items-center space-y-4 py-4 text-lg font-medium text-gray-600">
+            <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+            <li><a href="AboutUs.html" class="hover:text-blue-500">About</a></li>
+            <li><a href="Services.html" class="hover:text-blue-500">Services</a></li>
+            <li><a href="Portfolio.html" class="hover:text-blue-500">Portfolio</a></li>
+            <li><a href="Contact.html" class="hover:text-blue-500">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     
 
     <!-- Hero Section -->
@@ -114,13 +119,13 @@
     </section>
 
     <script>
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        hamburger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
         });
-    </script>
+      </script>
 
 </body>
 </html>

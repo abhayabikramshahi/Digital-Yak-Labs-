@@ -9,33 +9,40 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-       <!-- Navbar -->
-       <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
-        <div class="text-xl font-bold">Digital Yak Labs</div>
-
-        <!-- Hamburger Icon -->
-        <button id="hamburger" class="text-2xl md:hidden focus:outline-none">
-            &#9776;
-        </button>
-
-        <!-- Navigation Links -->
-        <nav id="navMenu" class="hidden md:flex space-x-6">
-            <a href="index.html" class="hover:text-yellow-400">Home</a>
-            <a href="AboutUs.html" class="hover:text-yellow-400">About Us</a>
-            <a href="Services.html" class="hover:text-yellow-400">Services</a>
-            <a href="Portfolio.html" class="hover:text-yellow-400">Portfolio</a>
-            <a href="Contact.html" class="hover:text-yellow-400">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Dropdown Menu for Mobile -->
-    <nav id="mobileMenu" class="hidden bg-gray-800 text-white space-y-4 p-4 md:hidden">
-        <a href="index.html" class="block hover:text-yellow-400">Home</a>
-        <a href="AboutUs.html" class="block hover:text-yellow-400">About Us</a>
-        <a href="Services.html" class="block hover:text-yellow-400">Services</a>
-        <a href="Portfolio.html" class="block hover:text-yellow-400">Portfolio</a>
-        <a href="Contact.html" class="block hover:text-yellow-400">Contact</a>
-    </nav>
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6 lg:px-16">
+          <!-- Logo -->
+          <a href="#" class="text-2xl font-bold text-gray-800">Digital Yak Labs</a>
+    
+          <!-- Navigation Links -->
+          <ul class="hidden lg:flex space-x-8 text-lg font-medium text-gray-600">
+            <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+            <li><a href="AboutUs.html" class="hover:text-blue-500">About</a></li>
+            <li><a href="Services.html" class="hover:text-blue-500">Services</a></li>
+            <li><a href="Portfolio.html" class="hover:text-blue-500">Portfolio</a></li>
+            <li><a href="Contact.html" class="hover:text-blue-500">Contact</a></li>
+          </ul>
+    
+          <!-- Mobile Menu Button -->
+          <button id="menu-btn" class="lg:hidden focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white">
+          <ul class="flex flex-col items-center space-y-4 py-4 text-lg font-medium text-gray-600">
+            <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+            <li><a href="AboutUs.html" class="hover:text-blue-500">About</a></li>
+            <li><a href="Services.html" class="hover:text-blue-500">Services</a></li>
+            <li><a href="Portfolio.html" class="hover:text-blue-500">Portfolio</a></li>
+            <li><a href="Contact.html" class="hover:text-blue-500">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    
 
 
     <!-- Hero Section -->
@@ -45,41 +52,48 @@
             <p class="text-lg mb-6">
                 Empowering businesses with innovative digital solutions and creative designs.
             </p>
-            <a href="#contact" class="bg-yellow-300 text-blue-600 py-3 px-8 rounded-lg font-medium shadow-lg hover:bg-yellow-400 transition duration-300">
-                Get in Touch
-            </a>
+          
         </div>
     </header>
 
-    <!-- About Section -->
-    <section class="py-16 bg-gray-100">
-        <div class="max-w-screen-xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-6">About <span class="text-blue-600">Digital Yak Labs</span></h2>
-            <p class="text-gray-700 text-lg mb-4">
-                At Digital Yak Labs, we specialize in crafting digital solutions that inspire growth and innovation. 
-                From web development to cutting-edge design, we help businesses stand out in the digital era.
-            </p>
-        </div>
-    </section>
 
-    <!-- Portfolio Section -->
-    <section class="py-16">
-        <div class="max-w-screen-xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Our <span class="text-blue-600">Work</span></h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 text-center p-6">
-                    <i class="fa-solid fa-school text-blue-600 text-6xl mb-4"></i>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">School digital Version</h3>
-                    <p class="text-gray-600">
-                        "An innovative and scalable platform to enhance learning experiences and streamline educational processes for schools."
-                    </p>
-                </div>
 
-               
+<!-- Portfolio Section -->
+<section class="py-16">
+  <div class="max-w-screen-xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Our <span class="text-blue-600">Work</span></h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="relative group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+              <img src="uploads/Screenshot 2024-12-29 083203.png" alt="School Digital Version" class="w-full h-48 object-cover">
+              
+              <!-- Hover Content -->
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 class="text-xl font-bold text-white mb-2">School Digital Version</h3>
+                  <a href="https://badimalikasecschool.netlify.app/#" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700">
+                    https://badimalikasecschool.netlify.app/
+                  </a>
+              </div>
+          </div>
+
+
+          <div class="relative group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+            <img src="uploads/Screenshot 2024-12-29 085316.png" alt="School Digital Version" class="w-full h-48 object-cover">
+            
+            <!-- Hover Content -->
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold text-white mb-2">Portfolio</h3>
+                <a href="https://abhayabikramshahi.netlify.app/" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700">
+                  https://abhayabikramshahi.netlify.app/
+                </a>
             </div>
         </div>
-    </section>
+      </div>
+  </div>
+</section>
+
+
+
 
     <!-- Skills Section -->
     <section class="py-16 bg-gray-100">
@@ -114,27 +128,57 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <footer class="py-16 bg-blue-600 text-white">
-        <div class="max-w-screen-xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-6">Let's <span class="text-yellow-300">Collaborate</span></h2>
-            <p class="mb-8">
-                Interested in working with us? Drop us a message, and let's create something extraordinary together!
-            </p>
-            <a href="#contact" class="bg-yellow-300 text-blue-600 py-3 px-8 rounded-lg font-medium shadow-lg hover:bg-yellow-400 transition duration-300">
-                Contact Us
-            </a>
-        </div>
-    </footer>
+   
 </style>
+
+
+<footer class="bg-gray-800 text-white py-6">
+  <!-- Footer Container -->
+  <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0">
+    <!-- Logo & About -->
+    <div class="w-full md:w-1/3">
+      <h1 class="text-2xl font-bold">Digital Yak Labs</h1>
+      <p class="text-sm mt-2">
+        Your partner for innovative design, branding, and digital marketing solutions tailored for success.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="w-full md:w-1/3">
+      <h2 class="text-lg font-semibold mb-2">Quick Links</h2>
+      <ul class="text-sm space-y-2">
+        <li><a href="AboutUs.html" class="hover:underline">About Us</a></li>
+        <li><a href="Services.html" class="hover:underline">Services</a></li>
+        <li><a href="Portfolio.html" class="hover:underline">Portfolio</a></li>
+        <li><a href="Contact.html" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="w-full md:w-1/3">
+      <h2 class="text-lg font-semibold mb-2">Contact</h2>
+      <ul class="text-sm space-y-2">
+        <li>Email: <a href="mailto:abhayabikramshahiofficial@gmail.com" class="hover:underline">abhayabikramshahiofficial@gmail.com</a></li>
+        <li>Phone: <a href="tel:+977 9808370638" class="hover:underline">+977 9808370638</a></li>
+        <li>Locations: Digital Yak Labs, Pokhari Chowr, kalikot, Nepal</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="mt-6 border-t border-gray-700 pt-4 text-center text-sm">
+    <p>&copy; 2024 Digital Yak Labs. All rights reserved.</p>
+  </div>
+</footer>
 <!-- JavaScript for Navbar Toggle -->
 <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-    hamburger.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 </script>
 </body>
 </html>
