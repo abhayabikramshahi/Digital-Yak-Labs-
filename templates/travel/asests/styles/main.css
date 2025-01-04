@@ -1,29 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
+.hero-bg {
+    background-image: url('/templates/travel/uplaods/kalle-kortelainen-6F-uGWod7Xk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  body{
     font-family: "Poppins", serif;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 12px;
-    align-items: center;
-}
-.navbar ul{
-    display: flex;
-    list-style: none;
-}
-.navbar ul li {
-    padding: 0 20px;
-}
-.navbar ul li a{
-    color: black;
-    text-decoration: none;
-}
-.mountains{
-    background: url(/templates/travel/uplaods/mountain-range-homepage.jpg);
-    height: 100%;
-}
+
+  }

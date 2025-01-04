@@ -1,36 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ne">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Theme | Digital Yak Labs</title>
-    <link rel="stylesheet" href="asests/styles/main.css">
-    <link rel="shortcut icon" href="uplaods/favicon.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Nepali Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="asests/styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    .bg-pattern {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/48/Nepalese_flag.svg'); /* Replace with a subtle Nepali pattern */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
 </head>
-<body>
-   <div class="mountains">
-    <div class="navbar">
-        <div class="logo">
-          XYZ <br> Travels 
+<body class="bg-gray-100">
+  
+  <!-- Navbar -->
+  <nav class="bg-pattern shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="#" class="flex-shrink-0 text-red-600 font-extrabold text-xl">
+            🇳🇵 Explore Nepal
+          </a>
         </div>
-        <div class="nav-items">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Destination</a></li>
-                <li><a href="#">Places</a></li>
-                <li><a href="#">Tour Packages</a></li>
-                <li><a href="#">Blog</a></li>
-                
-            </ul>
+        <!-- Desktop Menu -->
+        <div id="desktop-menu" class="hidden md:flex space-x-8 items-center">
+          <!-- Dynamic Menu Links -->
         </div>
-        <div class="btns">
-            <button>Get Started</button>
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden">
+          <button id="menu-btn" class="text-white hover:text-blue-500 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
         </div>
+      </div>
     </div>
-   </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white">
+      <!-- Dynamic Menu Links -->
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-bg h-screen flex items-center justify-center text-white" id="home">
+    <div class="text-center">
+      <img src="/templates/travel/uplaods/world-flag.png" alt="Nepali Flag" class="mx-auto mb-4 w-20 h-20">
+      <h1 class="text-4xl md:text-6xl font-bold">नेपालको सुन्दरता अन्वेषण गर्नुहोस्</h1>
+      <p class="mt-4 text-lg md:text-2xl">हाम्रो यात्रा एजेन्सीसँग नेपालका सुन्दर गन्तव्यहरूको खोजी गर्नुहोस्।</p>
+      <a href="#tours" class="mt-8 inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded">हाम्रो भ्रमणहरू हेर्नुहोस्</a>
+    </div>
+  </header>
+
+    <!-- Travel Advice Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-extrabold text-gray-800 text-center mb-8">Travel Advice for Nepal</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Box 1 -->
+            <div class="bg-gray-50 shadow-lg rounded-lg overflow-hidden">
+              <img src="uplaods/Stay Hydrated.jpg" alt="Stay Hydrated" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-800">Stay Hydrated</h3>
+                <p class="text-gray-600 mt-2">
+                  Always carry a reusable water bottle to stay hydrated, especially during treks in Nepal's hilly and mountainous regions.
+                </p>
+              </div>
+            </div>
+    
+            <!-- Box 2 -->
+            <div class="bg-gray-50 shadow-lg rounded-lg overflow-hidden">
+              <img src="uplaods/Respect Local Culture.jpg" alt="Respect Culture" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-800">Respect Local Culture</h3>
+                <p class="text-gray-600 mt-2">
+                  Show respect for Nepalese culture by learning a few phrases in Nepali and following local customs, especially in temples and villages.
+                </p>
+              </div>
+            </div>
+    
+            <!-- Box 3 -->
+            <div class="bg-gray-50 shadow-lg rounded-lg overflow-hidden">
+              <img src="uplaods/Be Weather Ready.jpg" alt="Be Prepared for Weather" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-800">Be Weather Ready</h3>
+                <p class="text-gray-600 mt-2">
+                  Nepal's weather can change rapidly. Pack layers, a raincoat, and sunscreen to stay comfortable during your journey.
+                </p>
+              </div>
+            </div>
+    
+            <!-- Box 4 -->
+            <div class="bg-gray-50 shadow-lg rounded-lg overflow-hidden">
+              <img src="uplaods/plan.jpg" alt="Plan Your Treks" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-800">Plan Your Treks</h3>
+                <p class="text-gray-600 mt-2">
+                  Choose treks suitable for your fitness level and ensure you have the right permits for trekking in Nepal's protected areas.
+                </p>
+              </div>
+            </div>
+    
+            <!-- Box 5 -->
+            <div class="bg-gray-50 shadow-lg rounded-lg overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Currency and Costs" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-800">Currency and Costs</h3>
+                <p class="text-gray-600 mt-2">
+                  Always carry some cash as ATMs may not be available in remote areas. The local currency is Nepalese Rupee (NPR).
+                </p>
+              </div>
+            </div>
+    
+            <!-- Box 6 -->
+            <div class="bg-gray-50 shadow-lg rounded-lg overflow-hidden">
+              <img src="uplaods/ecofirendly.jpg" alt="Eco-Friendly Travel" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-800">Eco-Friendly Travel</h3>
+                <p class="text-gray-600 mt-2">
+                  Help preserve Nepal's beauty by avoiding plastic waste and following the "leave no trace" principles during your trip.
+                </p>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+
+        <!-- Gallery Section -->
+  <section class="py-12" id="Gallery">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        
+        <!-- Image 1 -->
+        <div class="overflow-hidden">
+          <img 
+            src="uplaods/bajai.jpg" 
+            alt="Scenic Image" 
+            class="w-full h-auto object-cover" 
+            loading="lazy"
+          >
+        </div>
+
+        <!-- Image 2 -->
+        <div class="overflow-hidden">
+          <img 
+            src="uplaods/pahad.jpg" 
+            alt="Landscape Image" 
+            class="w-full h-auto object-cover" 
+            loading="lazy"
+          >
+        </div>
+
+        <!-- Image 3 -->
+        <div class="overflow-hidden">
+          <img 
+            src="uplaods/temple.jpg" 
+            alt="Hills and Fog" 
+            class="w-full h-auto object-cover" 
+            loading="lazy"
+          >
+        </div>
+
+        <!-- Image 4 -->
+        <div class="overflow-hidden">
+          <img 
+            src="uplaods/sunset(1).jpg" 
+            alt="Bridge and Water" 
+            class="w-full h-auto object-cover" 
+            loading="lazy"
+          >
+        </div>
+
+    
+
+        <!-- Image 6 -->
+        <div class="overflow-hidden">
+          <img 
+            src="uplaods/rara.jpg" 
+            alt="Lake and Mountain" 
+            class="w-full h-auto object-cover" 
+            loading="lazy"
+          >
+        </div>
+
+        <!-- Image 7 -->
+        <div class="overflow-hidden">
+          <img 
+            src="uplaods/sunset.jpg" 
+            alt="Sunset" 
+            class="w-full h-auto object-cover" 
+            loading="lazy"
+          >
+        </div>
+
+        <!-- Image 8 -->
+        <div class="overflow-hidden">
+          <img 
+            src="uplaods/bridge.jpg" 
+            alt="Peaceful Landscape" 
+            class="w-full h-auto object-cover" 
+            loading="lazy"
+          >
+        </div>
+
+        <!-- Image 9 -->
+        <div class="overflow-hidden">
+          <img 
+            src="uplaods/Morning.jpg" 
+            alt="Morning Views" 
+            class="w-full h-auto object-cover" 
+            loading="lazy"
+          >
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+<footer class="bg-gray-800 text-gray-200 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- About Section -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">About Explore Nepal</h3>
+        <p class="text-gray-400">
+          Explore Nepal is your gateway to discovering the breathtaking beauty, vibrant culture, and unparalleled adventures of Nepal. Join us to explore the heart of the Himalayas and immerse yourself in the land of peace and serenity!
+        </p>
+      </div>
+      
+      <!-- Quick Links Section -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#home" class="hover:text-red-500">Home</a></li>
+          <li><a href="#tours" class="hover:text-red-500">AboutUs</a></li>
+          <li><a href="#Gallery" class="hover:text-red-500">Gallery</a></li>
+         
+        </ul>
+      </div>
+      
+      <!-- Contact Section -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+        <p class="text-gray-400">
+          <span class="block">📍 kalikot</span>
+          <span class="block">📧 abhayabikramshahiofficial@gmail.com</span>
+          <span class="block">📞 +977-9808370638</span>
+        </p>
+        <div class="mt-4 flex space-x-4">
+          <!-- Social Media Icons -->
+        
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.04c-5.5 0-10 4.48-10 10.02 0 5 3.65 9 8.44 9.89v-7h-2.54v-2.89h2.54v-2.21c0-2.53 1.54-3.89 3.78-3.89 1.08 0 2.02.08 2.29.12v2.65h-1.57c-1.23 0-1.47.58-1.47 1.43v1.89h2.94l-.38 2.89h-2.56v7c4.78-.94 8.44-4.89 8.44-9.89 0-5.54-4.5-10.02-10-10.02z"/>
+            </svg>
+          </a>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm">
+      <p>© 2025 Explore Nepal. All rights reserved. | Designed by <a href="#" class="text-red-500 hover:underline">Digital Yak Labs</a></p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="asests/js/app.js"></script>
 </body>
 </html>

@@ -3,23 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template - Digital Yak Labs</title>
-    <link rel="stylesheet" href="template.css">
+    <title>Templates - Digital Yak Labs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <div class="contanier">
-        <h2>Templates of websites</h2>
-        <p>&copy; Powered by <span>Digital Yak Labs</span></p>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    
+    <!-- Header Section -->
+    <div class="bg-white shadow-md rounded-lg p-6 text-center w-full max-w-xl">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Templates of Websites</h2>
+        <p class="text-gray-600">
+            &copy; Powered by <span class="text-indigo-600 font-semibold">Digital Yak Labs</span>
+        </p>
     </div>
-    <div class="lists">
-        <a href="#">Hospital/Medical theme</a>
-        <a href="#">Travel agency theme</a>
-        <a href="https://badimalikasecschool.netlify.app/">School theme</a>
-        <a href="#">Gym theme</a>
+    
+    <!-- List Section -->
+    <div class="bg-white shadow-md rounded-lg mt-6 p-6 w-full max-w-xl">
+        <ul class="space-y-4">
+            <li>
+                <a href="/templates/hospital/hospital.html" class="block text-lg font-medium text-gray-800 hover:text-indigo-600 transition duration-200">
+                    🏥 Hospital/Medical Theme
+                </a>
+            </li>
+            <li>
+                <a href="/templates/travel/travel.html" class="block text-lg font-medium text-gray-800 hover:text-indigo-600 transition duration-200">
+                    ✈️ Travel Agency Theme
+                </a>
+            </li>
+            <li>
+                <a href="https://badimalikasecschool.netlify.app/" target="_blank" 
+                   class="block text-lg font-medium text-gray-800 hover:text-indigo-600 transition duration-200">
+                    📚 School Theme
+                </a>
+            </li>
+           
+        </ul>
+    </div>
 
-    </div>
 </body>
 </html>

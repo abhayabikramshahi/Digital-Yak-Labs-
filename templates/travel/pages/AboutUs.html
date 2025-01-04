@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Nepali Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="asests/styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    .bg-pattern {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/48/Nepalese_flag.svg'); /* Replace with a subtle Nepali pattern */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  
+  <!-- Navbar -->
+  <nav class="bg-pattern shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="#" class="flex-shrink-0 text-red-600 font-extrabold text-xl">
+            🇳🇵 Explore Nepal
+          </a>
+        </div>
+        <!-- Desktop Menu -->
+        <div id="desktop-menu" class="hidden md:flex space-x-8 items-center">
+          <!-- Dynamic Menu Links -->
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden">
+          <button id="menu-btn" class="text-white hover:text-blue-500 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white">
+      <!-- Dynamic Menu Links -->
+    </div>
+  </nav>
+
+  <!-- About Section -->
+<section id="about" class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Text Content -->
+        <div>
+          <h2 class="text-3xl font-extrabold text-gray-900 mb-4">About Explore Nepal</h2>
+          <p class="text-gray-700 leading-relaxed mb-6">
+            Welcome to <strong>Explore Nepal</strong>! We are dedicated to helping you uncover the hidden treasures of Nepal. From the majestic Himalayas to the lush Terai plains, our mission is to connect you with authentic experiences, breathtaking landscapes, and unforgettable adventures. Whether you're an avid trekker, cultural explorer, or nature lover, we promise to make your journey extraordinary.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            With a team of experienced guides, customized tours, and a passion for adventure, we strive to create moments that you'll cherish forever. Let Explore Nepal be your trusted companion in exploring the heart of this enchanting land.
+          </p>
+        </div>
+  
+        <!-- Image Content -->
+        <div class="relative">
+          <img 
+            src="/templates/travel/uplaods/Everest .jpg" 
+            alt="Himalayan mountains" 
+            class="rounded-lg shadow-lg w-full mb-4"
+          />
+          <div class="grid grid-cols-2 gap-4 absolute -bottom-16 left-1/4 md:left-1/3">
+            <img 
+              src="/templates/travel/uplaods/local.jpg" 
+              alt="Local culture" 
+              class="rounded-lg shadow-lg"
+            />
+            <img 
+              src="/templates/travel/uplaods/pashupatinath.jpg" 
+              alt="Nepali temple" 
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer Section -->
+<footer class="bg-gray-800 text-gray-200 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- About Section -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">About Explore Nepal</h3>
+        <p class="text-gray-400">
+          Explore Nepal is your gateway to discovering the breathtaking beauty, vibrant culture, and unparalleled adventures of Nepal. Join us to explore the heart of the Himalayas and immerse yourself in the land of peace and serenity!
+        </p>
+      </div>
+      
+      <!-- Quick Links Section -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#home" class="hover:text-red-500">Home</a></li>
+          <li><a href="#tours" class="hover:text-red-500">AboutUs</a></li>
+          <li><a href="#Gallery" class="hover:text-red-500">Gallery</a></li>
+         
+        </ul>
+      </div>
+      
+      <!-- Contact Section -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+        <p class="text-gray-400">
+          <span class="block">📍 kalikot</span>
+          <span class="block">📧 abhayabikramshahiofficial@gmail.com</span>
+          <span class="block">📞 +977-9808370638</span>
+        </p>
+        <div class="mt-4 flex space-x-4">
+          <!-- Social Media Icons -->
+        
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.04c-5.5 0-10 4.48-10 10.02 0 5 3.65 9 8.44 9.89v-7h-2.54v-2.89h2.54v-2.21c0-2.53 1.54-3.89 3.78-3.89 1.08 0 2.02.08 2.29.12v2.65h-1.57c-1.23 0-1.47.58-1.47 1.43v1.89h2.94l-.38 2.89h-2.56v7c4.78-.94 8.44-4.89 8.44-9.89 0-5.54-4.5-10.02-10-10.02z"/>
+            </svg>
+          </a>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm">
+      <p>© 2025 Explore Nepal. All rights reserved. | Designed by <a href="#" class="text-red-500 hover:underline">Digital Yak Labs</a></p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/templates/travel/asests/js/app.js"></script>
+</body>
+</html>
