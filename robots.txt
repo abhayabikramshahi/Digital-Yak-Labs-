@@ -1,6 +1,0 @@
-Sitemap: https://digitalyaklabs.netlify.app/sitemap.xml
-
-User-agent: *
-Disallow:
-
-Sitemap: https://digitalyaklabs.com/sitemap.xml
