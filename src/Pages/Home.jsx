@@ -30,7 +30,6 @@ const Home = () => {
               </Link>
             </div>
           </div>
-
           {/* Animated Illustration */}
           <div className="lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0">
             <div className="w-4/5 lg:w-full">

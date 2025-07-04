@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import blogImage from '../uploads/ai-2025.png';
 
 const blogs = [
   {
     id: 1,
     title: "Exploring the Power of ChatGPT: Revolutionizing Conversations with AI",
-    image: "/uploads/ai-2025.png",
+    image: blogImage,
     link: "/blog/Revolutionizing-Conversations-with-AI",
     author: "Abhaya Bikram Shahi",
     date: "January 16, 2025",
@@ -71,4 +72,4 @@ function Blogs() {
   );
 }
 
-export default Blogs; 
+export default Blogs;
