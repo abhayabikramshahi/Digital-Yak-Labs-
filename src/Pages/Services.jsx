@@ -1,102 +1,57 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { GraduationCap, TrendingUp, Clock } from "lucide-react";
+import { motion } from "framer-motion";
 
 const services = [
   {
-    title: 'Web Development',
-    description: 'Custom, scalable, and high-performance web applications tailored to your business needs.',
-    icon: '🌐',
+    title: "Digital School System",
+    description:
+      "Empowering schools with smart attendance, online results, fee tracking, and modern learning tools—all in one place.",
+    icon: <GraduationCap size={40} className="text-red-500" />,
   },
   {
-    title: 'Mobile Apps',
-    description: 'Beautiful, fast, and reliable mobile apps for iOS and Android platforms.',
-    icon: '📱',
+    title: "Boost Your Business Sales",
+    description:
+      "We create growth-driven strategies using SEO, analytics, and targeted marketing to skyrocket your revenue.",
+    icon: <TrendingUp size={40} className="text-red-500" />,
   },
   {
-    title: 'AI Solutions',
-    description: 'Integrate AI and machine learning to automate, analyze, and innovate.',
-    icon: '🤖',
-  },
-  {
-    title: 'UI/UX Design',
-    description: 'Stunning, user-centric designs that delight and engage your audience.',
-    icon: '🎨',
-  },
-  {
-    title: 'Cloud Services',
-    description: 'Secure, scalable, and cost-effective cloud solutions for modern businesses.',
-    icon: '☁️',
-  },
-  {
-    title: 'E-Commerce',
-    description: 'Robust online stores with seamless shopping experiences and payment integrations.',
-    icon: '🛒',
+    title: "On-Time Software Delivery",
+    description:
+      "Reliable, scalable software delivered with precision and speed—so you never miss a deadline.",
+    icon: <Clock size={40} className="text-red-500" />,
   },
 ];
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 80 } },
-};
-
-const Services = () => {
+const Service = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4" style={{ backgroundColor: '#000', color: '#fff' }}>
-      <motion.h1
-        initial={{ opacity: 0, y: -40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        className="text-4xl md:text-6xl font-extrabold text-center mb-8"
-      >
-        Our <span style={{ color: '#3b82f6' }}>Services</span>
-      </motion.h1>
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.7 }}
-        className="text-lg md:text-2xl text-center mb-12 max-w-2xl"
-        style={{ color: '#fff' }}
-      >
-        We deliver a wide range of digital solutions to help your business grow, innovate, and succeed in the digital era.
-      </motion.p>
-      <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        {services.map((service, idx) => (
-          <motion.div
-            key={service.title}
-            className="bg-[#111] rounded-2xl p-8 shadow-lg flex flex-col items-center text-center border border-[#222] hover:scale-105 hover:shadow-2xl transition-transform duration-300"
-            variants={cardVariants}
-            whileHover={{ scale: 1.08, boxShadow: '0 8px 32px #3b82f6' }}
-          >
+    <div className="min-h-screen px-6 py-16 bg-white text-black font-sans">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-4 tracking-tight">Our Core Services</h2>
+        <p className="text-gray-600 mb-12 text-lg">
+          We don’t just deliver solutions — we deliver results.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-10">
+          {services.map((service, index) => (
             <motion.div
-              className="text-5xl mb-4"
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.2 * idx, type: 'spring', stiffness: 120 }}
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2, duration: 0.6, ease: "easeOut" }}
+              className="bg-white border border-gray-200 p-8 rounded-2xl shadow-xl hover:shadow-red-400/30 transition-all duration-300"
             >
-              {service.icon}
+              <div className="flex items-center justify-center mb-6">
+                {service.icon}
+              </div>
+              <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
+              <p className="text-gray-600 leading-relaxed">{service.description}</p>
             </motion.div>
-            <h2 className="text-2xl font-bold mb-2" style={{ color: '#fff' }}>{service.title}</h2>
-            <p className="text-gray-300 mb-4">{service.description}</p>
-          </motion.div>
-        ))}
-      </motion.div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Services;
+export default Service;
