@@ -5,9 +5,9 @@ import Contact from "./Pages/Contact";
 import Services from "./Pages/Services";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Privacypolicy from "./Pages/Privacypolicy";
 import Blog from "./Pages/Blog";
 import NotFound from "./Pages/NotFound";
+import Policy from "./Pages/Policy";
 
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/privacypolicy" element={<Privacypolicy />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/policy" element={<Policy />} />
 
         {/* Blog Routes */}
 

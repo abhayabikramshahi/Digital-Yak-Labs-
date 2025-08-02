@@ -29,14 +29,14 @@ const Footer = () => {
             <Link to="/services" className="hover:text-blue-600 transition">
               Services
             </Link>
-            <Link to="/blogs" className="hover:text-blue-600 transition">
+            <Link to="/blog" className="hover:text-blue-600 transition">
               Blogs
             </Link>
             <Link to="/contact" className="hover:text-blue-600 transition">
               Contact
             </Link>
             <Link
-              to="/privacypolicy"
+              to="/policy"
               className="hover:text-blue-600 transition"
             >
               Privacy Policy
