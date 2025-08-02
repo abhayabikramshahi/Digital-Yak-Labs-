@@ -7,7 +7,7 @@ const Home = () => {
     <div className="min-h-screen bg-white text-gray-800 font-sans transition-all duration-300 ease-in-out">
       {/* SEO */}
       <Helmet>
-        <title>Abhaya | Empower Ideas with Innovation</title>
+        <title>Nepal Coding House Pvt.Ltd</title>
         <meta name="description" content="Empowering businesses worldwide with smart, scalable software and digital solutions." />
         <meta name="keywords" content="abhaya, web development, software, innovation, services" />
         <meta name="author" content="Abhaya Bikram Shahi" />
