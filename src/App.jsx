@@ -1,36 +1,30 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
+
 import About from "./Pages/About";
+
 import Contact from "./Pages/Contact";
-import Services from "./Pages/Services";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
-import Blog from "./Pages/Blog";
-import NotFound from "./Pages/NotFound";
-import Policy from "./Pages/Policy";
+import Blogs from "./Pages/Blogs";
+
+import "./App.css";
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <Router>
+      <div className="min-h-screen bg-white">
+        <Navbar />
+        <main className="pt-16">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
 
-      <Routes>
-        {/* Main Pages */}
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/policy" element={<Policy />} />
-
-        {/* Blog Routes */}
-
-        {/* Fallback 404 Page */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-
-      <Footer />
-    </>
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
