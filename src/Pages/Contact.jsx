@@ -1,133 +1,179 @@
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import SEO from "../components/SEO";
+// src/pages/Contact.jsx
+import React, { useState } from "react";
+import { Phone, Mail, User, MessageCircle } from "lucide-react";
+import { Helmet } from "react-helmet";
 
-const Contact = () => {
+export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    fullName: "",
+    email: "",
+    phone: "",
+    message: "",
   });
+
+  const [successMessage, setSuccessMessage] = useState("");
+
+  const handleChange = (e) =>
+    setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
+    console.log(formData);
+    setSuccessMessage("Message sent successfully!");
+    setFormData({ fullName: "", email: "", phone: "", message: "" });
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    setTimeout(() => setSuccessMessage(""), 3000);
   };
 
   return (
     <>
-      <SEO
-        title="Contact Digital Yak Labs"
-        description="Contact Digital Yak Labs for inquiries, support, or collaboration opportunities."
-        keywords="Contact Digital Yak Labs, support, inquiries, collaboration"
-        author="Digital Yak Labs"
-      />
-      <div className="min-h-screen bg-white">
-      <div className="container mx-auto px-6 lg:px-8 py-24">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold text-black mb-6 tracking-tight">Get in Touch</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Have a question or want to work together? We'd love to hear from you.
-          </p>
-        </motion.div>
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Contact Nepal Coding House - Get in Touch</title>
+        <meta
+          name="description"
+          content="Contact Nepal Coding House for inquiries, feedback, or to join our free coding courses. Reach us via email or phone."
+        />
+        <meta
+          name="keywords"
+          content="Nepal Coding House Contact, Free Coding Courses Nepal, Web Development Classes, Python Classes Nepal"
+        />
+        <meta name="author" content="Nepal Coding House" />
 
-        <div className="max-w-2xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white rounded-2xl shadow-xl p-8 md:p-12"
-          >
-            <form onSubmit={handleSubmit} className="space-y-8">
-              <div className="space-y-2">
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                  Name
-                </label>
+        {/* Open Graph */}
+        <meta property="og:title" content="Contact Nepal Coding House" />
+        <meta
+          property="og:description"
+          content="Get in touch with Nepal Coding House for free coding courses, inquiries, and more."
+        />
+        <meta
+          property="og:image"
+          content="https://nepalcodinghousepvltd.netlify.app/assets/hero.png"
+        />
+        <meta
+          property="og:url"
+          content="https://nepalcodinghousepvltd.netlify.app/contact"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Nepal Coding House" />
+        <meta
+          name="twitter:description"
+          content="Reach Nepal Coding House via email or phone for free coding courses and inquiries."
+        />
+        <meta
+          name="twitter:image"
+          content="https://nepalcodinghousepvltd.netlify.app/assets/hero.png"
+        />
+      </Helmet>
+
+      {/* Contact Page */}
+      <div className="min-h-screen bg-gray-50 py-16 px-6 lg:px-16">
+        <div className="container mx-auto max-w-6xl flex flex-col lg:flex-row gap-12">
+          {/* LHS: Contact Info + Hero Text */}
+          <div className="lg:w-1/2 flex flex-col justify-center gap-6 text-center lg:text-left">
+            <h1 className="text-4xl font-bold text-gray-800">
+              Let’s <span className="text-blue-500">Get in Touch</span>
+            </h1>
+            <p className="text-gray-600">
+              We’d love to hear from you. Fill out the form and we’ll get back as
+              soon as possible. For urgent matters, call us directly.
+            </p>
+
+            <div className="flex flex-col gap-4 mt-6 items-center lg:items-start">
+              <div className="flex items-center gap-4">
+                <Mail className="w-6 h-6 text-blue-500" />
+                <div>
+                  <h3 className="font-semibold text-gray-800">Email</h3>
+                  <p className="text-gray-600">
+                    abhayabikramshahiofficial@gmail.com
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <Phone className="w-6 h-6 text-blue-500" />
+                <div>
+                  <h3 className="font-semibold text-gray-800">Phone</h3>
+                  <p className="text-gray-600">+977-9808370638</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* RHS: Contact Form */}
+          <div className="lg:w-1/2 bg-white border border-[#ccc] p-4 md:p-6 rounded-xl shadow-md">
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div className="relative">
+                <User className="absolute top-2 left-2 w-5 h-5 text-gray-400" />
                 <input
                   type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
+                  name="fullName"
+                  placeholder="Full Name"
+                  value={formData.fullName}
                   onChange={handleChange}
-                  placeholder="Your name"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-black focus:ring-2 focus:ring-black/10 outline-none transition-all"
+                  className="w-full pl-8 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
               </div>
 
-              <div className="space-y-2">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Email
-                </label>
+              <div className="relative">
+                <Mail className="absolute top-2 left-2 w-5 h-5 text-gray-400" />
                 <input
                   type="email"
-                  id="email"
                   name="email"
+                  placeholder="Email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="your.email@example.com"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-black focus:ring-2 focus:ring-black/10 outline-none transition-all"
+                  className="w-full pl-8 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
               </div>
 
-              <div className="space-y-2">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                  Message
-                </label>
+              <div className="relative">
+                <Phone className="absolute top-2 left-2 w-5 h-5 text-gray-400" />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full pl-8 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+              </div>
+
+              <div className="relative">
+                <MessageCircle className="absolute top-2 left-2 w-5 h-5 text-gray-400" />
                 <textarea
-                  id="message"
                   name="message"
+                  placeholder="Your Message"
+                  rows="3"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Your message here..."
-                  rows="6"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-black focus:ring-2 focus:ring-black/10 outline-none transition-all resize-none"
+                  className="w-full pl-8 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 ></textarea>
               </div>
 
-              <motion.button
-                whileHover={{ scale: 1.02, y: -2 }}
-                whileTap={{ scale: 0.98 }}
+              <button
                 type="submit"
-                className="w-full bg-black text-white py-4 px-8 rounded-lg text-lg font-medium hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl"
+                className="w-full bg-blue-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-400 transition"
               >
                 Send Message
-              </motion.button>
+              </button>
             </form>
-          </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-12 text-center"
-          >
-            <p className="text-gray-600">
-              Or reach out directly at{' '}
-              <a href="mailto:contact@digitalyak.com" className="text-black font-medium hover:underline">
-                contact@digitalyak.com
-              </a>
-            </p>
-          </motion.div>
+            {successMessage && (
+              <p className="mt-3 text-green-600 font-medium text-center">
+                {successMessage}
+              </p>
+            )}
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
-};
-
-export default Contact; 
+}
