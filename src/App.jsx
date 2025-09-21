@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 import Home from './Pages/Home.jsx'
-import Contact from "./pages/Contact.jsx";
+import Contact from "./Pages/Contact.jsx";
 import Blog from "./pages/Blog.jsx";
-import Courses from "./pages/Courses.jsx";
-import PageNotFound from "./pages/PageNotFound.jsx";
+import Courses from "./Pages/Courses.jsx";
+import PageNotFound from "./Pages/PageNotFound.jsx";
 
 // Components
 import Navbar from "./components/Navbar.jsx";
